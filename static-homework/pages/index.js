@@ -14,8 +14,9 @@ export default function Home() {
           <h2>Bio</h2>
           <hr />
           <p>
-            *Narrado con voz muy muy MUY rasposa* My name is Batman, and first of all, let's get this out of the way quickly, Im definitely <strong>NOT</strong> Bruce Wayne.
-            So if yall could be so kind to make a small donation of at least 500 dollars each to support our crime fighting efforts..... that be hella cool.
+            *Narrado con voz muy muy MUY rasposa* My name is Batman, and first of all, let's get this out of the way,
+            Im definitely <strong>NOT</strong> Bruce Wayne. So if yall could be so kind to make a small donation of at least 500 
+            dollars each to support our crime fighting efforts..... that be hella cool.
           </p>
         </div>
       </div>      
@@ -26,10 +27,27 @@ export default function Home() {
             Hello There, Im <a href="https://www.dccomics.com/characters/batman">Batman</a>
           </h2>
         </div>
-        <div className="ability">
-          
+        <div className="grid">
+          <div className="ability">
+            <h2>Habilidades</h2>
+            <hr />
+            <ul className="description">
+              <li>Ser Batman</li>
+              <li>No ser Bruce Wayne</li>
+              <li>POW</li>
+              <li>WAPOW</li>
+            </ul>
+          </div>
+            <div className="hobby">
+            <h2>Hobby</h2>
+            <hr />
+            <ul className="description">
+              <li>Combatir el crimen</li>
+              <li>Conducir el Batimovil</li>
+              <li>Ser Batman</li>
+            </ul>
+          </div>  
         </div>
-
       </main>
 
       
@@ -42,10 +60,18 @@ export default function Home() {
         }
 
         .ability{
+          padding: 1rem;
+          border: 1px solid #eaeaea;
           border-radius: 10px;
-          border: 1px solid white;
+          margin-right: 5rem;
         }
           
+        .hobby{
+          padding: 1rem;
+          border: 1px solid #eaeaea;
+          border-radius: 10px;
+        }
+        
         .face-photo{
           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQkBBgYEuP70dZpP3xdw8vSBZrqA7vTg2WNYA&usqp=CAU);
           width: 20%;
@@ -62,6 +88,10 @@ export default function Home() {
         .card-desc img{
           border-radius: 50%;
           margin-left: 10%; 
+        }
+        
+        li{
+          list-style-type: "- ";
         }
 
         .container {
@@ -102,8 +132,7 @@ export default function Home() {
           font-size: 4rem;
         }
 
-        .title,
-        .description {
+        .title {
           text-align: center;
         }
 
@@ -127,7 +156,7 @@ export default function Home() {
           justify-content: center;
           flex-wrap: wrap;
           max-width: 800px;
-          margin-top: 3rem;
+          margin-left: 32%;
         }
 
         .card-desc{
@@ -153,13 +182,6 @@ export default function Home() {
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }
-
-        // .card:hover,
-        // .card:focus,
-        // .card:active {
-        //   color: #0070f3;
-        //   border-color: #0070f3;
-        // }
 
         .card h3 {
           margin: 0 0 1rem 0;
